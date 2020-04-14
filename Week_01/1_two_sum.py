@@ -26,5 +26,6 @@ class Solution:
         hashmap = {}
         for i, num in enumerate(nums):
             if target - num in hashmap:
+                # i 为当前index， hashmap.get(target - num) 为前面的index
                 return [hashmap.get(target - num), i]
             hashmap[num] = i
