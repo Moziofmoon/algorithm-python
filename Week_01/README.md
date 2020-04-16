@@ -1,18 +1,30 @@
 4.13-4.19 数组、链表
 
-Array 实战题目：
+两数之和题目： https://leetcode-cn.com/problems/two-sum/
 
-一、https://leetcode-cn.com/problems/move-zeroes/
+Array 实战题目
 
-二、https://leetcode-cn.com/problems/container-with-most-water/
+https://leetcode-cn.com/problems/container-with-most-water/
 
-三、https://leetcode.com/problems/climbing-stairs/
+https://leetcode-cn.com/problems/move-zeroes/
 
-四、https://leetcode-cn.com/problems/3sum/ (高频老题）
+https://leetcode.com/problems/climbing-stairs/
 
-巩固练习：
+https://leetcode-cn.com/problems/3sum/ (高频老题）
 
-一、https://leetcode-cn.com/problems/plus-one/
+Linked List 实战题目
+
+https://leetcode.com/problems/reverse-linked-list/
+
+https://leetcode.com/problems/swap-nodes-in-pairs
+
+https://leetcode.com/problems/linked-list-cycle
+
+https://leetcode.com/problems/linked-list-cycle-ii
+
+https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+课后作业
 
 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 
@@ -23,3 +35,45 @@ https://leetcode-cn.com/problems/merge-two-sorted-lists/
 https://leetcode-cn.com/problems/merge-sorted-array/
 
 https://leetcode-cn.com/problems/two-sum/
+
+https://leetcode-cn.com/problems/move-zeroes/
+
+https://leetcode-cn.com/problems/plus-one/
+
+简单：
+
+用 add first 或 add last 这套新的 API 改写 Deque 的代码
+
+分析 Queue 和 Priority Queue 的源码
+
+https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
+
+https://leetcode-cn.com/problems/rotate-array/
+
+https://leetcode-cn.com/problems/merge-two-sorted-lists/
+
+https://leetcode-cn.com/problems/merge-sorted-array/
+
+https://leetcode-cn.com/problems/two-sum/
+
+https://leetcode-cn.com/problems/move-zeroes/
+
+https://leetcode-cn.com/problems/plus-one/
+
+中等：
+
+https://leetcode.com/problems/design-circular-deque
+
+困难：
+
+https://leetcode.com/problems/trapping-rain-water/
+
+下周预习
+
+预习题目：
+
+有效的字母异位词
+
+二叉树的中序遍历
+
+最小的 k 个数
