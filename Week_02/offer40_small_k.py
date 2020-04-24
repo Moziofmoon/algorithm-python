@@ -24,3 +24,8 @@ class Solution:
 
         ret = [-x for x in hp]
         return ret
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.getLeastNumbers([3,2,1], 2))
