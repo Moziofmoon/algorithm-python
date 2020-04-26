@@ -52,5 +52,23 @@ class Solution2:
 
             root = stack.pop().right
 
-        return  ret
+        return ret
 
+
+class Solution3:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
+        """迭代法简单写法"""
+        if not root:
+            return []
+
+        ret = []
+        stack = []
+        while root or stack:
+            if root:
+                ret.append(root.val)
+                stack.append(root.right)
+                root = root.left
+            else:
+                root = stack.pop()
+
+        return ret
