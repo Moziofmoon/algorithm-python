@@ -49,3 +49,29 @@ class Solution:
             first, second = second, ret
         return ret
 # leetcode submit region end(Prohibit modification and deletion)
+
+
+class Solutionss2:
+    def climbStairs(self, n: int) -> int:
+        """
+        解题思路：f(n) = f(n-1) + f(n-2),可用递归，递归的思考方式：即当上第三个台阶的时候，
+                只有两种情况，第一个是从一阶跨到三阶，第二个是从二阶到三阶。所以到三阶的可能是
+                到一阶和到二阶之和。
+        时间复杂度：O(n)
+        空间复杂度：O(1)
+        :param n:
+        :return:
+        """
+        first = 1
+        second = 2
+        if not n:
+            return n
+        if n == 1:
+            return first
+        if n == 2:
+            return second
+        ret = 0
+        for i in range(n - 2):
+            ret = first + second
+            first, second = second, ret
+        return ret
