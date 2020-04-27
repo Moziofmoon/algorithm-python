@@ -20,6 +20,7 @@ class Solution2:
         """
         解题思路：计算数法
         利用map记录字符的数量
+        时间复杂度 O(n)
         :param s:
         :param t:
         :return:
