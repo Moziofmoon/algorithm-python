@@ -48,6 +48,8 @@ class Solution:
         generate2(ret, 0, 0, n, "")
         return ret
 
+
 if __name__ == '__main__':
     soultion = Solution()
     print(soultion.generateParenthesis(3))
+    
