@@ -23,8 +23,17 @@ class Solution:
         return self.output
 
     def backtrack(self, combination, next_digits):
+        """
+
+        :param combination: 返回的组合
+        :param next_digits: 剩余输入
+        :return:
+        """
+
+        # 当剩余输入为空时，加入答案列表
         if not len(next_digits):
             self.output.append(combination)
         else:
+            # 获取数字对应的字母，逐个递归
             for letter in self.phone[next_digits[0]]:
                 self.backtrack(combination + letter, next_digits[1:0])

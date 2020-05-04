@@ -16,3 +16,7 @@ class Solution:
             ans.extend(newsets)
 
         return ans
+
+if __name__ == '__main__':
+    soultion = Solution()
+    soultion.subsets([1, 2, 3])

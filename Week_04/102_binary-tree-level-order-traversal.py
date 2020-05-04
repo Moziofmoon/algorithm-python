@@ -26,6 +26,7 @@ class Solution:
         def helper(root, depth):
             if not root:
                 return
+            # 当为当前深度时，添加二维数组的维度
             if len(res) == depth:
                 res.append([])
             res[depth].append(root.val)
