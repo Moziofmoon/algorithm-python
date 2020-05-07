@@ -15,7 +15,17 @@ class Solution:
             dic.setdefault(num, 0)
             dic[num] += 1
 
+        # 取value最大值
         return max(dic, key=dic.get)
+
+
+class Solution2:
+    """
+    解题思路：
+        二、暴力法：计数后比较
+    """
+    def majorityElement(self, nums: List[int]) -> int:
+        return sorted(nums)[len(nums) // 2]
 
 
 if __name__ == '__main__':
