@@ -23,6 +23,7 @@ class Solution:
                     used[i] = False
                     path.pop()
 
+        # 剪枝的前提是排序
         nums.sort()
         used = [False] * len(nums)
         ret = []

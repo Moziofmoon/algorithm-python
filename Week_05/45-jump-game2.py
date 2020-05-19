@@ -48,14 +48,3 @@ class Solution3:
                     end = reach
                     count += 1
         return count
-
-    def jump(self, nums: List[int]) -> int:
-        reach, end, count = 0, 0, 0
-        for i in range(1, len(nums) - 1):
-            if reach >= i:
-                reach = max(reach, nums[i] + i)
-                if i == end:
-                    end = reach
-                    count += 1
-
-        return count
