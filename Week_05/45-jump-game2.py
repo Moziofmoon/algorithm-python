@@ -26,21 +26,11 @@ class Solution:
                 else:
                     return res
 
-class Solution2:
-    def jump(self, nums: List[int]) -> int:
-        reach,end,count = 0,0,0
-        for i in range(len(nums)-1):
-            if reach >= i:
-                reach = max(reach,i+nums[i])
-                if i == end:
-                    end = reach
-                    count  += 1
-        return count
-
 
 class Solution3:
     def jump(self, nums: List[int]) -> int:
         reach, end, count = 0, 0, 0  # 初始化参数
+        # 最后一位的计算没有意义，所以需要排除再外
         for i in range(len(nums) - 1):
             if reach >= i:
                 reach = max(reach, i + nums)  # 更新最大值
