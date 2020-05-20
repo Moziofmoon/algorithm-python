@@ -41,3 +41,5 @@ class Solution:
             res += 1
             forward = cur
         return 0
+
+print(~2)

@@ -12,6 +12,7 @@ class Solution:
         left = 0
         right = len(s) - 1
         while left < right:
+            # 因仅可以删除一个字母，所以仅需要一个判断即可返回结果
             if s[left] != s[right]:
                 s1 = s[:left] +s[left + 1:]
                 s2 = s[:right] +s[right + 1:]
@@ -19,6 +20,6 @@ class Solution:
             left += 1
             right -= 1
 
-    if __name__ == '__main__':
-        s = "abcd"
-        print(s[::-1])
+if __name__ == '__main__':
+    s = "abcd"
+    print(s[::-1])
