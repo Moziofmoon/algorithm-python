@@ -32,3 +32,29 @@ class Solution:
 
         return root
 
+
+import collections
+
+
+class SolutionByQue:
+    def connect(self, root: 'Node') -> 'Node':
+        if not root:
+            return root
+
+        Q = collections.deque([root])
+        while Q:
+            size = len(Q)
+
+            for i in range(size):
+                node = Q.popleft()
+
+                # 当i不是最后一个时，指向Q的下一个节点
+                if i < size - 1:
+                    node.next = Q[0]
+                # 判断是否有子节点，并加入队列
+                if node.left:
+                    Q.append(node.left)
+                if node.right:
+                    Q.append(node.right)
+
+        return root
