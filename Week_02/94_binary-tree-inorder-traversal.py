@@ -40,6 +40,7 @@ class Solution2:
 
         # 将root遍历，且stack为空时
         while root or stack:
+            # 当root不为空时，将root压栈。为空时出栈并记录
             if root:
                 stack.append(root)
                 root = root.left
