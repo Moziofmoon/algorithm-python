@@ -16,13 +16,17 @@ class Solution:
             return True
 
         def dfs(left, right):
+            # 同时为空时
             if not (left or right):
                 return True
+            # 有一个为空而另一个不为空
             if not (left and right):
                 return False
+
+            # 均不为空
             if left.val != right.val:
                 return False
-
+            # 需要左右子树同时满足
             return dfs(left.left, right.right) and dfs(left.right, right.left)
 
         return dfs(root.left, root.right)
